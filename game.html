@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link href="game.css" rel="stylesheet">
+		<script type="text/javascript" src="game.js"></script>
+	</head>
+	<body>
+		<div class="centered-padding">
+			<table>
+				<tr class="dHeader headers"><td colspan=2><h2 class="centered dHeader headers">Dealer</h2></td></tr>
+				<tr class="dHeader headers"><td colspan=2><div class="centered dHeader headers"><span>Score:</span><span id="dScore">0</span></div></td></tr>
+				<tr>
+					<td id="dealerCards" class="centered">
+						<img id="dCardImage1" class="cardSize dealerCard" src="img/back.png">
+						<img id="dCardImage2" class="cardSize dealerCard" src="img/back.png">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="centered-padding">
+			<table>
+				<tr class="pHeader headers"><td colspan=2><h2 class="centered pHeader headers">Player</h2></td></tr>
+				<tr class="pHeader headers"><td colspan=2><div class="centered pHeader headers"><span>Score:</span><span id="pScore">0</span></div></td></tr>
+				<tr>
+					<td id="playerCards" class="centered">
+						<img id="pCardImage1" class="cardSize playerCard" src="img/back.png">
+						<img id="pCardImage2" class="cardSize playerCard" src="img/back.png">
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<br>
+		
+		<div class="centered">
+			<input type="button" value="Start game" onclick="initiateGame();">
+			<input id="AddPlayerCard" type="button" value="Add a Card" onclick="addCard('playerCards','pScore','playerCard')" disabled>
+			<input id="PlayerStand" type="button" value="Stand" onclick="playerStand()" disabled>
+		</div>
+	</body>
+</html>

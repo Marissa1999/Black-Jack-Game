@@ -1,0 +1,48 @@
+/*
+*{
+	border:solid red 1px;	
+}
+*/
+
+body{
+	background-image: url("img/carpet.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table{
+	width: 100%;
+}
+
+span{
+	width:100%;
+}
+
+.cardSize{
+	width:140px;
+	height:180px;
+}
+
+.centered{
+	text-align:center;
+}
+
+.centered-padding{
+	padding-left:15%;
+	padding-right:15%;
+}
+
+.green{
+	background-color: green;
+}
+.yellow{
+	background-color: yellow;
+}
+
+
+
+
+
+
+
+
